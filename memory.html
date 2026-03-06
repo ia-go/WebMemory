@@ -1,0 +1,40 @@
+<!doctype html>
+<html
+  lang="de"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ein einfaches Memory mit HTML, CSS und Javascript"
+    />
+    <meta name="author" content="Iago Garcia Bärtsch" />
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Memory</title>
+    <!--[if gte mso 9
+      ]><xml>
+        <mso:CustomDocumentProperties>
+          <mso:B_Doc_Classification msdt:dt="string"
+            >B1 Business</mso:B_Doc_Classification
+          >
+        </mso:CustomDocumentProperties>
+      </xml><!
+    [endif]-->
+  </head>
+  <body>
+    <h1 id="Title">Memory</h1>
+    <div class="Score">
+      <p class="PlayerScore" id="Score">0/10</p>
+      <div class="Timer">Time: <span id="timer">00:00.00</span></div>
+      <p class="PlayerScore" id="Highscore">Fastest Time: --:--.--</p>
+    </div>
+    <div id="Playground"></div>
+    <div class="overlay">
+      <button id="StartButton">Start</button>
+    </div>
+  </body>
+</html>
