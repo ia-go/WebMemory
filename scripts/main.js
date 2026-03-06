@@ -107,7 +107,7 @@ function revealCard(pickedCard) {
 }
 
 function hideCard(pickedCard) {
-  const img = pickedCard.querySelector("img"); // query selector mit dani -> Chat !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  const img = pickedCard.querySelector("img");
   img.classList.remove("revealed");
   img.classList.add("hidden");
 }
@@ -122,8 +122,7 @@ function MatchCheck() {
 
     matchedPairs++;
     PairsScore.textContent = matchedPairs + "/" + 10;
-    if (matchedPairs === 1) {
-      memoryImagesAmount / 2;
+    if (matchedPairs === memoryImagesAmount / 2) {
       finish();
     }
   } else {
